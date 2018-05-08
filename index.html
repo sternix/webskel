@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="assets/bs/4_1_1/css/bootstrap.css">
+		<title>Hello World</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="app">
+				{{ message }}
+			</div>
+		</div>
+
+		<script src="assets/jquery-3.3.1.slim.min.js"></script>
+		<script src="assets/popperjs/1_14_3/popper.min.js"></script>
+		<script src="assets/bs/4_1_1/js/bootstrap.min.js"></script>
+		<script src="assets/axios/0_18_0/axios.min.js"></script>
+		<script src="assets/vue-2.5.17.min.js"></script>
+
+		<script>
+			// jquery test
+			$(function() {
+				console.log('JQuery Works');
+			});
+		</script>
+
+		<script>
+			// vue test
+			let vue = new Vue({
+				el: '#app',
+				data: {
+					message: 'Hello from Vue',
+				},
+			});
+		</script>
+
+		<script>
+			// axios test
+			axios('/').then(function(response){
+				console.log(response.data);
+				console.log("if you see this page on console this means axios works");
+			})	
+		</script>
+	</body>
+</html>

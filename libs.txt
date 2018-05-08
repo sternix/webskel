@@ -1,0 +1,29 @@
+Bootstrap
+https://github.com/twbs/bootstrap/releases
+
+Popper.js // required by bootstrap, use dist/umd version
+https://github.com/FezVrasta/popper.js/releases
+
+JQuery // required by bootstrap
+https://github.com/jquery/jquery/releases
+
+VueJS
+https://github.com/vuejs/vue/releases
+
+Axios
+https://github.com/axios/axios/releases
+
+
+nginx.conf
+=BEGIN
+    server {
+        listen       80;
+        server_name localhost;
+
+        location / {
+            root   /full/path/to/skel/dir;
+            index  index.html index.htm;
+        }
+    }
+=END
+
